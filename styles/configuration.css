@@ -1,6 +1,7 @@
-#config-overlay{
+#config-overlay {
 	text-align: center;
 }
+
 #config-overlay h2 {
 	margin: 0.5rem 0;
 }
@@ -22,4 +23,11 @@
 	margin-bottom: 7px;
 	padding: 0.35rem;
 
+}
+
+.player-symbol {
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(47, 4, 82);
+	margin: 0.5rem 0;
 }
