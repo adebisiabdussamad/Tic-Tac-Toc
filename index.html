@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="/styles/styles.css">
 		<link rel="stylesheet" href="/styles/overlay.css">
 		<link rel="stylesheet" href="/styles/configuration.css">
+		<link rel="stylesheet" href="/styles/game.css">
 	</head>
 
 	<body>
@@ -42,7 +43,7 @@
 							<h2>Player 1</h2>
 							<h3>PLAYER NAME</h3>
 							<p class="player-symbol">X</p>
-							<button class="btn btn-alt">Edit</button>
+							<button class="btn btn-alt" id="player-edit-1">Edit</button>
 						</article>
 					</li>
 					<li>
@@ -54,18 +55,17 @@
 						</article>
 					</li>
 				</ol>
-				<button class="btn">Start New Game</button>
+				<button class="btn" id="player-edit-2">Start New Game</button>
 			</section>
 
 			<!-- The game field -->
 			<section id="active-game">
-				<article>
-
+				<article id="game-over">
 					<h3>You won!, <span id="winner-name">PLAYER NAME</span>!</h3>
 					<p>Click "Start New Game" above, to start a new game!</p>
 				</article>
 				<p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
-				<ol>
+				<ol id="game-board">
 					<!-- line 1 -->
 					<li></li>
 					<li></li>
@@ -81,6 +81,12 @@
 				</ol>
 			</section>
 		</main>
+		<div class="cat-whiskers-left">
+			<div class="cat-whisker-left-top"></div>
+			<div class="cat-whisker-left-bottom"></div>
+		</div>
+		<div class="cat-whiskers-right"></div>
 	</body>
+	<script src="/scripts/app.js"></script>
 
 </html>
