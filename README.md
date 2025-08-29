@@ -50,7 +50,7 @@ Two players can take turns selecting fields on the 3x3 grid until one player win
 
 Here’s a preview of the game in action:
 
-![Tic Tac Toe Screenshot](.\styles\Screenshot.png)
+![Tic Tac Toe Screenshot](/styles/Screenshot.png)
 
 ---
 
