@@ -27,8 +27,9 @@
 							<label for="playername">Player name</label>
 							<input type="text" name="playername" id="playername">
 						</div>
+						<p id="config-errors"></p>
 						<div>
-							<button class="btn btn-alt" type="button">Cancel</button>
+							<button class="btn btn-alt" id="cancel-config" type="reset">Cancel</button>
 							<button class="btn" type="submit">Confirm</button>
 						</div>
 					</div>
@@ -39,23 +40,23 @@
 			<section id="game-config">
 				<ol>
 					<li>
-						<article>
+						<article id="player-1-data">
 							<h2>Player 1</h2>
 							<h3>PLAYER NAME</h3>
 							<p class="player-symbol">X</p>
-							<button class="btn btn-alt" id="player-edit-1">Edit</button>
+							<button class="btn btn-alt" id="player-edit-1" data-playerid="1">Edit</button>
 						</article>
 					</li>
 					<li>
-						<article>
+						<article id="player-2-data">
 							<h2>Player 2</h2>
 							<h3>PLAYER NAME</h3>
 							<p class="player-symbol">O</p>
-							<button class="btn btn-alt">Edit</button>
+							<button class="btn btn-alt" id="player-edit-2" data-playerid="2">Edit</button>
 						</article>
 					</li>
 				</ol>
-				<button class="btn" id="player-edit-2">Start New Game</button>
+				<button id="start-game" class="btn">Start New Game</button>
 			</section>
 
 			<!-- The game field -->
@@ -66,18 +67,17 @@
 				</article>
 				<p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
 				<ol id="game-board">
-					<!-- line 1 -->
-					<li></li>
-					<li></li>
-					<li></li>
+					<li data-col="1" data-row="1"></li>
+					<li data-col="2" data-row="1"></li>
+					<li data-col="3" data-row="1"></li>
 					<!-- line 2 -->
-					<li></li>
-					<li></li>
-					<li></li>
+					<li data-col="1" data-row="2"></li>
+					<li data-col="2" data-row="2"></li>
+					<li data-col="3" data-row="2"></li>
 					<!-- line 3 -->
-					<li></li>
-					<li></li>
-					<li></li>
+					<li data-col="1" data-row="3"></li>
+					<li data-col="2" data-row="3"></li>
+					<li data-col="3" data-row="3"></li>
 				</ol>
 			</section>
 		</main>
@@ -87,6 +87,8 @@
 		</div>
 		<div class="cat-whiskers-right"></div>
 	</body>
+	<script src="/scripts/config.js"></script>
+	<script src="/scripts/game.js"></script>
 	<script src="/scripts/app.js"></script>
 
 </html>
