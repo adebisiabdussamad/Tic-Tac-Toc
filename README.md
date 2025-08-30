@@ -74,4 +74,4 @@ Here’s a preview of the game in action:
 
 ## 👨‍💻 Author
 
-Built as a **practice project** by [Adebisi Abdussamad Ayomide]
+Built as a **practice project** by **Adebisi Abdussamad Ayomide**
